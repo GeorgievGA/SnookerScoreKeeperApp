@@ -24,11 +24,94 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:paddingTop="16dp"
+                android:paddingBottom="2dp"
                 android:text="Player 1"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textColor="#616161"
                 android:fontFamily="sans-serif-medium"
                 />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/score_redA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+
+                <TextView
+                    android:id="@+id/score_yellowA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_greenA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_brownA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/brown_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_blueA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_pinkA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pink_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_blackA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/player1_score"
@@ -40,6 +123,7 @@
                 android:textSize="34sp"
                 android:textColor="#000000"
                 android:fontFamily="sans-serif-light"/>
+
 
 
 
@@ -66,7 +150,7 @@
                 />
 
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp">
@@ -94,7 +178,7 @@
 </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -122,7 +206,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -161,7 +245,7 @@
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -172,8 +256,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="4PT"
+                    android:text="4"
                     android:layout_marginRight="2dp"
+                    android:background="#D32F2F"
                     />
                 <Button
                     android:id="@+id/foul_fiveA"
@@ -181,15 +266,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="5PT"
+                    android:text="5"
                     android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#D32F2F"
                     />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
 
                 <Button
                     android:id="@+id/foul_sixA"
@@ -197,8 +278,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="6PT"
+                    android:text="6"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
+                    android:background="#D32F2F"
                     />
                 <Button
                     android:id="@+id/foul_sevenA"
@@ -206,10 +289,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="7PT"
+                    android:text="7"
                     android:layout_marginLeft="2dp"
+                    android:background="#D32F2F"
                     />
+
             </LinearLayout>
+
 
 
 
@@ -234,11 +320,94 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:paddingTop="16dp"
+                android:paddingBottom="2dp"
                 android:text="Player 2"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textColor="#616161"
                 android:fontFamily="sans-serif-medium"
                 />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_gravity="center_horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/score_redB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+
+                <TextView
+                    android:id="@+id/score_yellowB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_greenB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_brownB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/brown_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_blueB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_pinkB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pink_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+                <TextView
+                    android:id="@+id/score_blackB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_ball"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"/>
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/player2_score"
@@ -276,7 +445,7 @@
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -304,7 +473,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -332,7 +501,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -371,7 +540,7 @@
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
@@ -382,8 +551,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="4PT"
+                    android:text="4"
                     android:layout_marginRight="2dp"
+                    android:background="#D32F2F"
                     />
                 <Button
                     android:id="@+id/foul_fiveB"
@@ -391,15 +561,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="5PT"
+                    android:text="5"
                     android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#D32F2F"
                     />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
 
                 <Button
                     android:id="@+id/foul_sixB"
@@ -407,8 +573,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="6PT"
+                    android:text="6"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
+                    android:background="#D32F2F"
                     />
                 <Button
                     android:id="@+id/foul_sevenB"
@@ -416,11 +584,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="7PT"
+                    android:text="7"
                     android:layout_marginLeft="2dp"
+                    android:background="#D32F2F"
                     />
-            </LinearLayout>
 
+            </LinearLayout>
 
 
 
@@ -432,7 +601,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/score_board"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="21dp"
         android:background="#4CAF50"
         android:onClick="Reset"
         android:paddingLeft="14dp"
